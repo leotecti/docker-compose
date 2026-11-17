@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro de Produtos</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <section class="card">
+      <h1>Cadastro de Produtos</h1>
+      <p class="subtitle">Aplicação simples com frontend, backend e banco de dados usando Docker Compose.</p>
+
+      <form id="produtoForm" class="form">
+        <input
+          type="text"
+          id="nomeProduto"
+          placeholder="Digite o nome do produto"
+          autocomplete="off"
+          required
+        />
+        <button type="submit">Salvar</button>
+      </form>
+
+      <p id="mensagem" class="message"></p>
+
+      <h2>Produtos cadastrados</h2>
+      <ul id="listaProdutos" class="product-list"></ul>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
